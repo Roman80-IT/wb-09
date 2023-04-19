@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WB "Block Model"</title>
+    <!-- https://fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- ======= LESSON 5 - Block Model ======= -->
+      <section>
+        <h1>
+          <a
+            class="link"
+            href="https://www.edu.goit.global/uk/learn/10442131/8851858/8851883/textbook"
+            >goit</a
+          >
+          <a
+            class="en"
+            href="https://www.edu.goit.global/learn/10442131/8851858/8851875/textbook"
+            >(en)</a
+          >
+          LESSON 5 - Block Model
+        </h1>
+
+        <h2>Box Model <br />(Блокова модель)</h2>
+        <img
+          class="top-upper img-1"
+          src="./images/box-model/box-model.png"
+          alt="visual model of the box model"
+          width="2500"
+        />
+
+        <ul>
+          <li class="delta">
+            <strong>Область вмісту (content)</strong> — контент елемента (текст,
+            зображення, відео або вкладені елементи). За замовчуванням його
+            висота визначається контентом, ширина - типом елемента (блоковий або
+            рядковий).
+          </li>
+          <li class="delta">
+            <strong>Внутрішнє поле (padding)</strong> — відстань до 'border',
+            використовується для декоративних ефектів. Не можна встановлювати
+            від'ємні значення.
+          </li>
+          <li class="delta">
+            <strong>Рамка (border)</strong> — межа елемента. За замовчуванням -
+            ширина = '0'; колір = кольору контенту (тексту).
+          </li>
+          <li class="delta">
+            <strong>Зовнішній відступ (margin)</strong> — відступ від 'border'
+            до сусідніх елементів. Може приймати від'ємні значення. Фон елемента
+            не поширюється на 'margin'.
+          </li>
+        </ul>
+
+        <div class="container">
+          <!-- === CODEPEN-1 === -->
+          <a class="codepen" href="https://codepen.io/Roman80-IT/pen/ZEqWJvp"
+            >Codepen</a
+          >
+          <p
+            class="codepen"
+            data-height="300"
+            data-default-tab="html,result"
+            data-slug-hash="ZEqWJvp"
+            data-user="Roman80-IT"
+            style="
+              height: 300px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/Roman80-IT/pen/ZEqWJvp"> Untitled</a>
+              by Roman80-IT (<a href="https://codepen.io/Roman80-IT"
+                >@Roman80-IT</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+        </div>
+      </section>
+
+      <!-- ======= width ======= -->
+      <section>
+        <h3>
+          <code>width</code> and <code>height</code> properties
+          <br />Властивості 'width' i 'height'
+        </h3>
+
+        <p>
+          Ці властивості явно вказують загальну ширину і висоту елемента, або
+          тільки розмір його області вмісту (контенту) — залежить від типу
+          блокової моделі.
+        </p>
+        <p>Поради:</p>
+        <ul>
+          <li class="delta">
+            Не ставте елементам фіксовану висоту (може призвести до
+            переповнення) — краще, щоб визначалася контентом.
+          </li>
+          <li class="delta">
+            Вказувати одночасно <code>width</code> і <code>height</code> варто
+            тільки декоративним елементам з фіксованим розміром, наприклад
+            іконкам.
+          </li>
+          <li class="delta">
+            Можна задавати не тільки в <code>'px'</code>, <code>'em'</code> або
+            <code>'rem'</code>, але й у <code>'%'</code> — ширина блоку буде
+            розрахована як відсоток від ширини батька (детальніше при побудові
+            сіток).
+          </li>
+        </ul>
+
+        <!-- === CODEPEN-2 === -->
+        <div class="container">
+          <a class="codepen" href="https://codepen.io/Roman80-IT/pen/ZEqpLNP"
+            >Codepen</a
+          >
+          <p
+            class="codepen"
+            data-height="464"
+            data-default-tab="html,result"
+            data-slug-hash="ZEqpLNP"
+            data-user="Roman80-IT"
+            style="
+              height: 464px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/Roman80-IT/pen/ZEqpLNP">
+                wb05 - width &amp; height</a
+              >
+              by Roman80-IT (<a href="https://codepen.io/Roman80-IT"
+                >@Roman80-IT</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+        </div>
+        <div class="alert">
+          <p>УВАГА !</p>
+          <p>
+            Фінальна ширина і висота блоку <code>div.box</code> буде 220px, а не
+            150px. Існує декілька типів блокової моделі, які відрізняються
+            формулою розрахунку розміру елемента.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h3>
+          <code>box-sizing</code>property <br />Властивість
+          <code>box-sizing</code>
+        </h3>
+        <p>
+          Встановлює тип блокової моделі елемента — формулу розрахунку його
+          розмірів.
+        </p>
+
+        <div class="codeBlock">
+          <code class="codeBlockLines"
+            ><span>
+              <span>box-sizing: content-box </span><span>|</span
+              ><span> border-box </span><span>|</span><span> inherit</span
+              ><br /></span
+          ></code>
+        </div>
+        <ul>
+          <li class="delta">
+            <code>content-box</code> — властивості width і height задають
+            області вмісту, не включають розміри полів (padding), меж (border) і
+            відступів (margin).
+            <p>
+              Цей тип блокової моделі використовується в браузерах за
+              замовчуванням.
+            </p>
+            <p>
+              Задавши елементу width 150px, padding 30px і border 5px, отримаємо
+              фінальну ширину 220px.
+            </p>
+            <span style="color: rgb(98, 114, 164)"
+              >/* Фінальна ширина блоку = 150px + 30px + 30px + 5px + 5px
+              */</span
+            >
+            <img
+              class="img-1"
+              src="./images/box-model/content-box.png"
+              alt=""
+            />
+          </li>
+          <li class="delta">
+            <code>border-box</code> — фінальний розмір елемента, включають
+            значення полів (padding) і меж (border), але не відступів (margin).
+          </li>
+          <li class="delta">
+            <code>inherit</code> — наслідує значення блокової моделі предка.
+          </li>
+        </ul>
+
+        <!-- <div class="codeBlock">
+          <code class="codeBlockLines"
+            ><span class="token-line" style="color: rgb(248, 248, 242)"
+              ><span class="token plain">box-sizing: content-box </span
+              ><span class="token operator" style="">|</span
+              ><span class="token plain"> border-box </span
+              ><span class="token operator" style="">|</span
+              ><span class="token plain"> inherit</span><br /></span
+          ></code>
+        </div> -->
+
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
+        <!-- ++++++++++++ -->
+        <h3>Геометрія елемента</h3>
+        <h4>Властивість "padding"</h4>
+
+        <p class="text">
+          Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing. Omnis
+          voluptatibus sit reprehenderit iure est eveniet saepe fugit debitis
+          laborum odio voluptatem repellat eaque voluptatum quos neque optio,
+          perspiciatis aperiam error odit praesentium consequatur totam maiores.
+          Minus similique molestias, eveniet delectus eaque dignissimos! Id
+          deserunt magni doloremque, corrupti consectetur vero!
+        </p>
+
+        <h4>Властивість "padding"</h4>
+
+        <article class="post">
+          <div class="post-thumb">
+            <img
+              class="post-image"
+              src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
+              alt="Tabby cat in a funny sitting position"
+            />
+          </div>
+          <h2 class="post-heading">All about cats</h2>
+          <p class="post-text">
+            Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing.
+            Omnis voluptatibus sit reprehenderit iure est eveniet saepe fugit
+            debitis laborum odio voluptatem repellat eaque voluptatum quos neque
+            optio, perspiciatis aperiam error odit praesentium consequatur totam
+            maiores. Minus similique molestias, eveniet delectus eaque
+            dignissimos! Id deserunt magni doloremque, corrupti consectetur vero
+            veniam!
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
