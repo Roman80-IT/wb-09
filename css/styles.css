@@ -469,6 +469,7 @@ code {
   background-color: var(--ifm-alert-background);
   /* var(--prism-background-color */
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .codeBlockLines {

@@ -34,7 +34,7 @@
 
         <h2>Позиційовані елементи</h2>
 
-        <p>Задачі властивості <code>position</code>:</p>
+        <p>Задачі та властивості <code>position</code>:</p>
 
         <ul>
           <li class="delta">зробити напис на зображенні товару</li>
@@ -45,14 +45,19 @@
           <li class="delta">
             дозволяє буквально підняти елемент і розмістити його поверх іншого
           </li>
+          <li class="delta">
+            по замовчуванню (в блоковій моделі, флексбоксі) - cтатичне
+            позиціонування <code>(static)</code>
+          </li>
+          <li class="delta"></li>
         </ul>
 
-        <img
+        <!-- <img
           class="top-upper img-1"
           src="./images/positioning/css-positioning-schemes.png "
           alt="visual model of the box model"
           width="1200"
-        />
+        /> -->
         <p>
           Статичне позиціонування <code>(static)</code> - розташування елементів
           по замовчуванню (в блоковій моделі, флексбоксі) в статичному потоці
@@ -63,7 +68,45 @@
           координат, початок якої залежить від типу позиціонування.
         </p>
 
-        <h3>Властивість position</h3>
+        <h3>Властивість <code>position</code></h3>
+
+        <p>
+          Змінює тип позиціонування елемента. За замовчуванням встановлено
+          значення <code>static</code>. Для керування положенням елемента
+          відносно батьківського використовуються властивості: <code>top</code>,
+          <code>left</code>, <code>bottom</code> або <code>right</code>.
+        </p>
+
+        <br />
+
+        <!-- === codeBlock === -->
+        <div class="codeBlock">
+          <code class="codeBlockLines"
+            ><span>
+              <span>position: static </span><span> | </span
+              ><span> relative </span><span>|</span><span> absolute </span
+              ><span>|</span><span> fixed </span><span>|</span
+              ><span> sticky </span><span>|</span><span> inherit </span
+              ><br /></span
+          ></code>
+        </div>
+        Елемент, <code>position</code> якого відрізняється від
+        <code>static</code>, називається
+        <strong>«позиційований елемент»</strong>.
+
+        <img
+          class="top-upper img-1"
+          src="./images/positioning/positioned-elements.png  "
+          alt="visual model of the box model"
+          width="1200"
+        />
+
+        <h3>Відносне позиціонування</h3>
+        <p>
+          Елемент залишається в потоці сторінки (сусідні елементи не займають
+          його місце). Візуально елемент можна зсунути, також він може
+          перекривати сусідів.
+        </p>
 
         <!-- ======= LESSON 9 - Positioned Items ======= -->
         <!-- ======= LESSON 9 - Positioned Items ======= -->
