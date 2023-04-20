@@ -52,12 +52,6 @@
           <li class="delta"></li>
         </ul>
 
-        <!-- <img
-          class="top-upper img-1"
-          src="./images/positioning/css-positioning-schemes.png "
-          alt="visual model of the box model"
-          width="1200"
-        /> -->
         <p>
           Статичне позиціонування <code>(static)</code> - розташування елементів
           по замовчуванню (в блоковій моделі, флексбоксі) в статичному потоці
@@ -94,13 +88,17 @@
         <code>static</code>, називається
         <strong>«позиційований елемент»</strong>.
 
+        <!-- === image === -->
         <img
           class="top-upper img-1"
           src="./images/positioning/positioned-elements.png  "
           alt="visual model of the box model"
           width="1200"
         />
+      </section>
 
+      <!-- ========== Відносне позиціонування ========== -->
+      <section>
         <h3>Відносне позиціонування</h3>
         <p>
           Елемент залишається в потоці сторінки (сусідні елементи не займають
@@ -108,52 +106,51 @@
           перекривати сусідів.
         </p>
 
-        <!-- ======= LESSON 9 - Positioned Items ======= -->
-        <!-- ======= LESSON 9 - Positioned Items ======= -->
-        <!-- ======= LESSON 9 - Positioned Items ======= -->
-        <!-- ======= LESSON 9 - Positioned Items ======= -->
-        <!-- ======= LESSON 9 - Positioned Items ======= -->
-        <!-- ======= LESSON 9 - Positioned Items ======= -->
-        <!-- ======= LESSON 9 - Positioned Items ======= -->
-        <!-- ======= LESSON 9 - Positioned Items ======= -->
-        <!-- ======= LESSON 9 - Positioned Items ======= -->
-        <!-- ======= LESSON 9 - Positioned Items ======= -->
-        <ul>
-          <li class="delta">
-            <strong>Область вмісту (content)</strong> — контент елемента (текст,
-            зображення, відео або вкладені елементи). За замовчуванням його
-            висота визначається контентом, ширина - типом елемента (блоковий або
-            рядковий).
-          </li>
-          <li class="delta">
-            <strong>Внутрішнє поле (padding)</strong> — відстань до 'border',
-            використовується для декоративних ефектів. Не можна встановлювати
-            від'ємні значення.
-          </li>
-          <li class="delta">
-            <strong>Рамка (border)</strong> — межа елемента. За замовчуванням -
-            ширина = '0'; колір = кольору контенту (тексту).
-          </li>
-          <li class="delta">
-            <strong>Зовнішній відступ (margin)</strong> — відступ від 'border'
-            до сусідніх елементів. Може приймати від'ємні значення. Фон елемента
-            не поширюється на 'margin'.
-          </li>
-        </ul>
+        <p>
+          Властивості <code>top</code>, <code>left</code>, <code>bottom</code> і
+          <code>right</code> дозволяють вказати зміщення елемента (візуальне)
+          щодо його вихідного положення. Можуть приймати від'ємні значення.
+        </p>
 
+        <!-- === image === -->
+        <img
+          class="top-upper img-1"
+          src="./images/positioning/relative-positioning-offsets.png  "
+          alt="visual model of the box model"
+          width="1200"
+        />
+
+        <!-- === alert === -->
+        <div class="alert">
+          <p>КОРИСНО</p>
+          <p>
+            Відносне позиціонування не використовується самостійно, тому що
+            елемент не виривається з потоку сторінки, продовжуючи займати місце.
+            Використовується тільки разом із абсолютним позиціонуванням.
+          </p>
+        </div>
+
+        <p>
+          Створимо три блоки. Середньому div.relative встановимо відносне
+          позиціонування і візуально змістимо його вправо і вниз щодо
+          початкового положення.
+        </p>
+
+        <!-- === CODEPEN-1 === -->
         <div class="container">
-          <!-- === CODEPEN-1 === -->
-          <a class="codepen" href="https://codepen.io/Roman80-IT/pen/ZEqWJvp"
+          <a
+            class="codepen"
+            href="https://codepen.io/Roman80-IT/pen/BaqQZYL?editors=1100"
             >Codepen</a
           >
           <p
             class="codepen"
-            data-height="300"
+            data-height="457"
             data-default-tab="html,result"
-            data-slug-hash="ZEqWJvp"
+            data-slug-hash="BaqQZYL"
             data-user="Roman80-IT"
             style="
-              height: 300px;
+              height: 457px;
               box-sizing: border-box;
               display: flex;
               align-items: center;
@@ -165,7 +162,9 @@
           >
             <span
               >See the Pen
-              <a href="https://codepen.io/Roman80-IT/pen/ZEqWJvp"> Untitled</a>
+              <a href="https://codepen.io/Roman80-IT/pen/BaqQZYL">
+                wb-9 Positioned elements</a
+              >
               by Roman80-IT (<a href="https://codepen.io/Roman80-IT"
                 >@Roman80-IT</a
               >) on <a href="https://codepen.io">CodePen</a>.</span
@@ -177,7 +176,22 @@
           ></script>
         </div>
       </section>
+      <!-- ========== Відносне позиціонування ========== -->
+      <section>
+        <h3>Абсолютне позиціонування</h3>
+        <p>Під час використання абсолютного позиціонування елемент виривається з потоку сторінки, тобто сусідні елементи займають його місце. Відлік значень top, left, bottom і right для абсолютно позиційованого елемента ведеться щодо найближчого предка з позиціонуванням, відмінного від статичного. Якщо такого предка не буде, то відлік буде здійснюватися від меж елемента <body>.</p>
+      </section>
 
+      <!-- ======= LESSON 9 - Positioned Items ======= -->
+      <!-- ======= LESSON 9 - Positioned Items ======= -->
+      <!-- ======= LESSON 9 - Positioned Items ======= -->
+      <!-- ======= LESSON 9 - Positioned Items ======= -->
+      <!-- ======= LESSON 9 - Positioned Items ======= -->
+      <!-- ======= LESSON 9 - Positioned Items ======= -->
+      <!-- ======= LESSON 9 - Positioned Items ======= -->
+      <!-- ======= LESSON 9 - Positioned Items ======= -->
+      <!-- ======= LESSON 9 - Positioned Items ======= -->
+      <!-- ======= LESSON 9 - Positioned Items ======= -->
       <!-- ======= width ======= -->
       <section>
         <h3>
@@ -246,6 +260,8 @@
             src="https://cpwebassets.codepen.io/assets/embed/ei.js"
           ></script>
         </div>
+
+        <!-- === alert === -->
         <div class="alert">
           <p>УВАГА !</p>
           <p>
@@ -266,6 +282,7 @@
           розмірів.
         </p>
 
+        <!-- === codeBlock === -->
         <div class="codeBlock">
           <code class="codeBlockLines"
             ><span>
@@ -305,58 +322,6 @@
             <code>inherit</code> — наслідує значення блокової моделі предка.
           </li>
         </ul>
-
-        <!-- <div class="codeBlock">
-          <code class="codeBlockLines"
-            ><span class="token-line" style="color: rgb(248, 248, 242)"
-              ><span class="token plain">box-sizing: content-box </span
-              ><span class="token operator" style="">|</span
-              ><span class="token plain"> border-box </span
-              ><span class="token operator" style="">|</span
-              ><span class="token plain"> inherit</span><br /></span
-          ></code>
-        </div> -->
-
-        <!-- ++++++++++++ -->
-        <!-- ++++++++++++ -->
-        <!-- ++++++++++++ -->
-        <!-- ++++++++++++ -->
-        <!-- ++++++++++++ -->
-        <!-- ++++++++++++ -->
-        <!-- ++++++++++++ -->
-        <h3>Геометрія елемента</h3>
-        <h4>Властивість "padding"</h4>
-
-        <p class="text">
-          Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing. Omnis
-          voluptatibus sit reprehenderit iure est eveniet saepe fugit debitis
-          laborum odio voluptatem repellat eaque voluptatum quos neque optio,
-          perspiciatis aperiam error odit praesentium consequatur totam maiores.
-          Minus similique molestias, eveniet delectus eaque dignissimos! Id
-          deserunt magni doloremque, corrupti consectetur vero!
-        </p>
-
-        <h4>Властивість "padding"</h4>
-
-        <article class="post">
-          <div class="post-thumb">
-            <img
-              class="post-image"
-              src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
-              alt="Tabby cat in a funny sitting position"
-            />
-          </div>
-          <h2 class="post-heading">All about cats</h2>
-          <p class="post-text">
-            Lorem ipsum dolor sit, amet consectetur elit omnis adipisicing.
-            Omnis voluptatibus sit reprehenderit iure est eveniet saepe fugit
-            debitis laborum odio voluptatem repellat eaque voluptatum quos neque
-            optio, perspiciatis aperiam error odit praesentium consequatur totam
-            maiores. Minus similique molestias, eveniet delectus eaque
-            dignissimos! Id deserunt magni doloremque, corrupti consectetur vero
-            veniam!
-          </p>
-        </article>
       </section>
     </main>
   </body>

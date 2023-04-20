@@ -335,6 +335,7 @@
   --prism-background-color: #282a36;
   --ifm-code-padding-horizontal: 0.2rem;
   --ifm-code-padding-vertical: 0.1rem;
+  --ifm-alert-border-color: #d4d5d8;
   --ifm-alert-border-width: 0px;
   --ifm-alert-border-left-width: 5px;
   --ifm-alert-border-radius: var(--ifm-global-radius);
@@ -350,6 +351,18 @@ body {
   font-family: "Open Sans", sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 section {
@@ -375,6 +388,9 @@ section {
 
 img {
   display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* відступи для li-шок */
@@ -437,23 +453,16 @@ code {
 
 /**
   |============================
-  | УВАГА !
+  | УВАГА !  alert
   |============================
 */
 
 .alert {
   max-width: 100%;
-  /* --ifm-link-color: var(--ifm-alert-foreground-color);
-  --ifm-link-hover-color: var(--ifm-alert-foreground-color);
-  --ifm-link-decoration: underline;
-  --ifm-tabs-color: var(--ifm-alert-foreground-color);
-  --ifm-tabs-color-active: var(--ifm-alert-foreground-color);
-  --ifm-tabs-color-active-border: var(--ifm-alert-border-color); */
   background-color: var(--ifm-alert-background);
-  border: var(--ifm-alert-border-width) solid var(--ifm-color-secondary-dark);
+  border: var(--ifm-alert-border-width) solid var(--ifm-alert-border-color);
   border-left-width: var(--ifm-alert-border-left-width);
   border-radius: var(--ifm-alert-border-radius);
-  /* box-shadow: var(--ifm-alert-shadow); */
   padding: 10px 20px;
   margin-top: 20px;
 }
@@ -498,7 +507,7 @@ code {
 
 .img-1 {
   max-width: 70%;
-  margin: 20px;
+  /* margin: 50px; */
 }
 
 /* === Геометрія елемента === */
