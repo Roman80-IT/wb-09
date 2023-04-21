@@ -359,11 +359,118 @@
             src="https://cpwebassets.codepen.io/assets/embed/ei.js"
           ></script>
         </div>
-        <!-- ===  Dark font -->
+      </section>
+
+      <!-- ======= Sticky positioning ======= -->
+      <section>
+        <h3>Sticky positioning <br />Липке позиціонування</h3>
+        <p>
+          Липке позиціонування (<code>sticky</code>) - це ніби комбінація
+          властивостей
+          <code>relative</code> і <code>fixed</code>. На ілюстрації - липке
+          позиціонування задається елементам з літерами A і B:
+        </p>
+
+        <img
+          src="https://textbook.edu.goit.global/html-css/uk/version-1.0/assets/lesson-09/position-sticky-2.gif"
+          alt="Sticky positioning"
+          class="medium-zoom-image"
+          style="
+            display: block;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: var(--ifm-leading);
+            max-width: 480px;
+            /* transform: scale(1.42083) translate3d(-18.0059px, 14.1349px, 0px); */
+          "
+        />
+
+        <ol>
+          <li class="delta">
+            Доки елемент знаходиться у своєму контейнері і контейнер не покидає
+            область видимості під час вертикальної прокрутки - елемент поводить
+            себе ніби позиціонується щодо (relative).
+          </li>
+          <li class="delta">
+            Щойно частина батьківського контейнера залишає зону видимості,
+            елемент фіксується на сторінці доти, доки хоча б якусь частину
+            контейнера видно на екрані.
+          </li>
+          <li class="delta">
+            Якщо весь контейнер покине зону видимості, то знову увімкнеться
+            поведінка як під час відносного позиціонування - елемент зникне з
+            екрану одразу після контейнера.
+          </li>
+        </ol>
+
+        <p>Для реалізації липкого позиціонування необхідні всього три умови:</p>
+
+        <ul>
+          <li class="delta">
+            У липкого елемента повинно бути встановлено позиціонування
+            <code>position: sticky</code>.
+          </li>
+          <li class="delta">
+            У липкого елемента повинно бути встановлено положення, наприклад
+            <code>top: 0</code>.
+          </li>
+          <li class="delta">
+            Елемент-контейнер повинен бути більшим по висоті за липкий елемент.
+          </li>
+          <li class="delta">
+            Заголовки секцій в прикладі зроблені липкими, тому, під час
+            прокручування сторінки вони будуть «прилипати» до верху області
+            перегляду доти, доки видима будь-яка частина їх секції.
+          </li>
+        </ul>
+
+        Заголовки секцій в прикладі зроблені липкими, тому, під час
+        прокручування сторінки вони будуть «прилипати» до верху області
+        перегляду доти, доки видима будь-яка частина їх секції.
+
+        <!-- === CODEPEN-1 === -->
+        <div class="container">
+          <a class="codepen" href="https://codepen.io/Roman80-IT/pen/GRYNLYO"
+            >Codepen</a
+          >
+          <p
+            class="codepen"
+            data-height="500"
+            data-default-tab="html,result"
+            data-slug-hash="wvYoVwd"
+            data-user="Roman80-IT"
+            style="
+              height: 500px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/Roman80-IT/pen/wvYoVwd">
+                wb-9 sticky-positioning</a
+              >
+              by Roman80-IT (<a href="https://codepen.io/Roman80-IT"
+                >@Roman80-IT</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+        </div>
+      </section>
+      <!-- ===  Dark font === 
         <span style="color: rgb(98, 114, 164)"
           >/* Фінальна ширина блоку = 150px + 30px + 30px + 5px + 5px */</span
-        >
-      </section>
+        > -->
     </main>
   </body>
 </html>
