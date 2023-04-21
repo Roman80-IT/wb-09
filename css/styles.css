@@ -470,6 +470,7 @@ code {
   border-radius: var(--ifm-alert-border-radius);
   padding: 20px 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /**
