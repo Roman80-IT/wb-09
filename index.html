@@ -273,20 +273,92 @@
         </div>
       </section>
 
-      <!-- ======= LESSON 9 - Positioned Items ======= -->
-      <!-- ======= LESSON 9 - Positioned Items ======= -->
-      <!-- ======= LESSON 9 - Positioned Items ======= -->
-      <!-- ======= LESSON 9 - Positioned Items ======= -->
-      <!-- ======= LESSON 9 - Positioned Items ======= -->
-      <!-- ======= LESSON 9 - Positioned Items ======= -->
-      <!-- ======= LESSON 9 - Positioned Items ======= -->
-      <!-- ======= width ======= -->
+      <!-- ======= Fixed positioning ======= -->
       <section>
-        <h3>
-          <code>width</code> and <code>height</code> properties
-          <br />Властивості 'width' i 'height'
-        </h3>
+        <h3>Fixed positioning <br />Фіксоване позиціонування</h3>
+        елемент вилучається з потоку сторінки і позиціонується щодо в'юпорту
+        (вікна браузера). Це створює ефект фіксації елемента в певному місці
+        екрану при прокручуванні сторінки.
 
+        <!-- ======= Fixed positioning ======= -->
+        <img
+          src="https://textbook.edu.goit.global/html-css/uk/version-1.0/assets/lesson-09/fixed-positioning-animated.gif"
+          alt="Фіксована шапка"
+          style="
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            background-color: hsl(0, 0%, 90%);
+            max-width: 320px;
+          "
+        />
+
+        <!-- <img
+          src="/html-css/uk/version-1.0/assets/lesson-09/fixed-positioning-animated.gif"
+          alt="Фіксована шапка"
+          class="medium-zoom-image medium-zoom-image--opened"
+          style="
+            display: block;
+            width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: var(--ifm-leading);
+            max-width: 320px;
+            position: absolute;
+            top: 6025.31px;
+            left: 514.583px;
+            height: 320px;
+            transform: scale(1.25) translate3d(-20.4667px, 131.261px, 0px);
+          "
+        /> -->
+
+        <!-- <iframe
+          src="https://www.ciuvo.com/ciuvo/globalstorage?version=2.1.4"
+          style="position: absolute; width: 1px; height: 1px; left: -9999px"
+        ></iframe> -->
+
+        Створимо кнопку чату з менеджером
+        <code>button.chat-button</code>button.chat-button і помістимо її в
+        нижній правий кут в'юпорту. Під час прокручування сторінки кнопка
+        залишається на місці, тому що у неї фіксоване позиціонування.
+
+        <!-- === CODEPEN-1 === -->
+        <div class="container">
+          <a class="codepen" href="https://codepen.io/Roman80-IT/pen/GRYNLYO"
+            >Codepen</a
+          >
+          <p
+            class="codepen"
+            data-height="300"
+            data-default-tab="html,result"
+            data-slug-hash="GRYNLYO"
+            data-user="Roman80-IT"
+            style="
+              height: 300px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/Roman80-IT/pen/GRYNLYO">
+                wb-9 Fixed positioning</a
+              >
+              by Roman80-IT (<a href="https://codepen.io/Roman80-IT"
+                >@Roman80-IT</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+        </div>
         <!-- ===  Dark font -->
         <span style="color: rgb(98, 114, 164)"
           >/* Фінальна ширина блоку = 150px + 30px + 30px + 5px + 5px */</span
